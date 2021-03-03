@@ -1,0 +1,42 @@
+@import 'setup';
+@import 'global';
+@import 'typography';
+@import '../components/Students/Students.scss';
+
+
+
+.App {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mainWrap {
+  width: 60%;
+  height: 80%;
+  overflow-y: scroll;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.searchBoxes {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+}
+
+.nameSearch {
+  margin: 10px auto;
+  width: 95%;
+  height: 50px;
+  border: none;
+  border-bottom: solid 1px grey;
+  &:focus {
+    outline: none
+  }
+}

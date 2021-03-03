@@ -1,0 +1,59 @@
+.Students {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  border-bottom: solid 1px grey;
+  place-items: center start;
+  padding: 10px;
+}
+
+.displayPicContainer {
+  figure {
+    border: solid 1px grey;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      transform: scale(3);
+    }
+  }
+}
+
+.studentInfoContainer {
+  padding: 0 10px;
+  flex: 1;
+  ul {
+    list-style: none;
+  }
+}
+
+.icons {
+  position: relative;
+  top: 25px;
+  justify-self: end;
+  align-self: start;
+}
+
+.tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  p {
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(148, 148, 148);
+    color: white;
+  }
+}
+
+.createTag {
+  border: none;
+  border-bottom: solid 1px grey;
+  &:focus {
+    outline: none;
+  }
+}
